@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Jost", sans-serif;
+    height: 1000px;
+}
+/* header start*/
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    transition: 0.3s background;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.07);
+}
+.logo{
+    height: 50px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: rotate(-5deg);
+}
+.main-header .navbar{
+    padding: 15px 0;
+}
+.main-header .navbar-nav > li {
+    padding: 0 10px;
+}
+.main-header .navbar-nav > li > .nav-link {
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: relative;
+}
+.main-header .navbar-nav > li > .nav-link:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    background-color: brown;
+    transition: ease all 0.3s;
+}
+.main-header .navbar-nav > li > .nav-link:hover{
+    color: brown;
+}
+.main-header .navbar-nav > li > .nav-link:hover:after{
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.cv{
+    padding: 8px 20px;
+    border: 2px solid brown;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: ease all 0.3s;
+    display: inline-block;
+    background: brown;
+    color: white;
+    box-shadow: 6px 6px 0 -1px gray;
+}
+.cv:hover{
+    color: white;
+    background: rgb(57, 57, 57);
+    border-color: rgb(48, 48, 48);
+    box-shadow: 5px 5px 0 -2px brown;
+}
+/* header end */
+/* home start  */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12% 5% 0 5%;
+}
+#home .social{
+    margin: 15px 0 0 0;
+}
+.homeImg img{
+    width: 400px;
+    height: 380px;
+    cursor: pointer;
+}
+.cvHireBtn{
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all ease 0.5s;
+}
+.cvBtn{
+    background-color: brown;
+    color: white;
+}
+.hireBtn{
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+}
+.cvBtn:hover{
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+}
+.hireBtn:hover{
+    background-color: brown;
+    color: white;
+}
+.socialIcon{
+    margin: 2px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.socialIcon:hover{
+    transform: scale(1.2);
+}
+/* home end  */
+
+/* services start  */
+#all-service-box{
+    display: flex;
+    justify-content: center;
+}
+.service-box{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.service-box:hover{
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.09);
+}
+/* services end  */
+
+/* project section start  */
+
+.workBox img {
+    width: 350px;
+    padding: 20px;
+}
+/* project section end  */
+
+/* back to top  */
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 30px;
+    text-align: center;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+}
+
+/* responsive sector  */
+@media (max-width: 810px) {
+    .titleBackText{
+        font-size:80px !important;
+        z-index: -999;
+    }
+    .titlefrontText{
+        font-size: 40px !important;
+    }
+}
+/* Responsive Header CSS */
+@media (max-width: 992px) {
+    .main-header {
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        height: 40px;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .main-header .navbar {
+        padding: 10px 0;
+    }
+    .main-header .navbar-nav {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+        position: absolute;
+        top: 70px;
+    }
+    .sidebar {
+        position: fixed;
+        top:0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #f8f9fa;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        transition: right 0.3s ease;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar.active {
+        right: 0;
+    }
+    .main-header .navbar-nav > li {
+        padding: 7px 0;
+        z-index: 1;
+    }
+    .close-sidebar-btn{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: none;
+        background-color: #f8f9fa;
+    }
+    .cv-btn{
+       display: none;
+    }
+    #home{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .homeImg img{
+        width: 340px;
+        height: 320px;
+    }
+}
+@media (max-width: 768px) {
+    .main-header {
+        background: white;
+        /* padding: 0 15px; */
+    }
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar ul li {
+        /* padding: 15px 0; */
+        text-align: center;
+    }
+    .sidebar ul li a {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .sidebar ul li a:hover {
+        color: brown;
+    }
+
+}
+@media (max-width: 576px) {
+    .logo {
+        height: 30px; /* Further reduce logo size */
+    }
+
+    .main-header .navbar-nav > li > .nav-link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+}

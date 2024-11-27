@@ -6,8 +6,7 @@
     <link rel="icon" href="media/rh-logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">  
     <title>RaTuL HasAn</title>
 </head>
 <body class="bg-light" >
@@ -47,7 +46,11 @@
     <section id="home" class="container">
         <div class="homeContent">
             <h2>Hello! I'm <span style="color: brown;">RaTuL HasAn</span></h2>
-            <h3>I'm a <span style="color: brown;">Fontend Developer</span></h3>
+            <div class="typing-container">
+                <h3 class="d-inline">I'm a</h3>
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor" id="cursor">|</span>
+            </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium repellendus consequatur neque illo nobis recusandae natus, doloribus dolore, ab esse quas ducimus tempore excepturi tempora dolorem aperiam quia. Aperiam et similique cum nulla enim illum consequatur numquam assumenda iusto, deserunt atque, quae saepe consectetur commodi aut, perferendis velit hic.</p>
             <a class="cvHireBtn cvBtn" href="media/document/My-CV.pdf" target="_blank" >My CV</a>
             <a class="cvHireBtn hireBtn" href="#contact">Hire Me</a>
@@ -345,6 +348,7 @@
 
 
     <!-- <script src="JS/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>  
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

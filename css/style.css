@@ -10,6 +10,7 @@
 body{
     font-family: "Jost", sans-serif;
     height: 1000px;
+    /* overflow: hidden; */
 }
 /* header start*/
 
@@ -92,6 +93,21 @@ body{
     justify-content: space-between;
     padding: 12% 5% 0 5%;
 }
+.typing-container {
+    font-size: 30px;
+}
+.typing-text{
+    color: brown;
+}
+.cursor {
+    color: brown;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 #home .social{
     margin: 15px 0 0 0;
 }

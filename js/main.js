@@ -13,7 +13,7 @@ sidebar.addEventListener('click', () => {
 
 // typing effct start 
 const typingTexts = [
-  "Fron-end Web Developer",
+  "Fron-end Developer",
   "Quick Learner.",
   "Web Designer",
   "Freeleancer!"
